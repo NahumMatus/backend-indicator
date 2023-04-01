@@ -6,6 +6,6 @@ export class IndicatorController {
   constructor(private indicatorSvc: IndicatorService) {}
   @Get()
   getBitcoinPrice() {
-    return 'hola';
+    return this.indicatorSvc.getIndicators();
   }
 }
