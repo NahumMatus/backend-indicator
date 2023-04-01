@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend:
+    build: ./
+    container_name: nestjs_api
+    environment:
+      - PORT=8080
+    ports:
+      - '8080:8080'
+    networks:
+      - nestjs_network
+networks:
+  nestjs_network:
+    driver: bridge
