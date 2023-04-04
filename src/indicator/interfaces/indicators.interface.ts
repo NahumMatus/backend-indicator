@@ -1,31 +1,31 @@
 export interface Indicators {
-  version:           string;
-  autor:             string;
-  fecha:             Date;
-  uf:                Bitcoin;
-  ivp:               Bitcoin;
-  dolar:             Bitcoin;
+  version: string;
+  autor: string;
+  fecha: Date;
+  uf: Bitcoin;
+  ivp: Bitcoin;
+  dolar: Bitcoin;
   dolar_intercambio: Bitcoin;
-  euro:              Bitcoin;
-  ipc:               Bitcoin;
-  utm:               Bitcoin;
-  imacec:            Bitcoin;
-  tpm:               Bitcoin;
-  libra_cobre:       Bitcoin;
-  tasa_desempleo:    Bitcoin;
-  bitcoin:           Bitcoin;
+  euro: Bitcoin;
+  ipc: Bitcoin;
+  utm: Bitcoin;
+  imacec: Bitcoin;
+  tpm: Bitcoin;
+  libra_cobre: Bitcoin;
+  tasa_desempleo: Bitcoin;
+  bitcoin: Bitcoin;
 }
 
 export interface Bitcoin {
-  codigo:        string;
-  nombre:        string;
+  codigo: string;
+  nombre: string;
   unidad_medida: UnidadMedida;
-  fecha:         Date;
-  valor:         number;
+  fecha: Date;
+  valor: number;
 }
 
 export enum UnidadMedida {
-  Dólar = "Dólar",
-  Pesos = "Pesos",
-  Porcentaje = "Porcentaje",
+  Dólar = 'Dólar',
+  Pesos = 'Pesos',
+  Porcentaje = 'Porcentaje',
 }
